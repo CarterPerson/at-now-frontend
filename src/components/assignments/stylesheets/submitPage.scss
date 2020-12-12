@@ -1,0 +1,35 @@
+@import '../../stylesheets/variables.scss';
+
+.submitContainer{
+    
+}
+.submitButton{
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #8FD783;
+    outline: none;
+    color: white;
+    border-radius: 2px;
+}
+.hourInput{
+    margin-left:90px;
+    width:70px;
+}
+.submitBlurb{
+    margin: 20px;
+    font-size:14px;
+}
+.timeReqBoxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.backArrow{
+    height: 20px;
+}
+.returnButton{
+    height: 20px;
+}
+.submitBlurb{
+  color: darkgrey;
+}

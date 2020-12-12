@@ -1,0 +1,38 @@
+@import '../../stylesheets/variables.scss';
+
+.assignmentListItem {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid transparent;
+  text-align: left;
+  display: flex;
+  justify-content: flex-end;
+  background: white;
+  padding: 2px;
+  align-items: center;
+
+  &:nth-child(n + 2) {
+    border-top: 1px solid lightgrey;
+  }
+}
+
+.assignmentListItem-title {
+  margin-right: auto;
+  font-size: $font-size-medium;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 2px;
+}
+
+.assignmentListItem-course {
+  font-size: $font-size-small;
+  color: white;
+  border-radius: 999px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.assignmentListItem-icon {
+  margin: 0;
+}

@@ -1,0 +1,19 @@
+@import '../../stylesheets/variables.scss';
+
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day-title {
+  font-size: $font-size-small;
+  color: $color-text-dark;
+}
+
+.day-body {
+  position: relative;
+  width: 100%;
+  border-radius: $border-radius-regular;
+  background: $color-calendar-available;
+}

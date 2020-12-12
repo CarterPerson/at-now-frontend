@@ -1,0 +1,33 @@
+{
+    "name": "at-now",
+    "version": "0.1",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "index.html",
+        "default_title": "at-now"
+    },
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3D1Zu7arDhe+KVEItwMpM/5EQ62C1zxWGML/oDusa6WSUs5bjC8rTzwxrDzYW3FOnshnGrYG4SjMU7h9YuxuFPdXbTlmc67auYHsrdJLT89+eg6oFfcK1Ud08u7IvpJ2aLFns4S2cVHo1pq5xoDXQEBPz7SiMjWOS9dpH0VSmnPnqukYYL0zhfqF3Jgv0Yru9GSMRLf4qNv72duHRU7W8GodnTdnZ5HrLjZBcAAh1ep5ZMX6KvW7/TAEcTrisfyB0l9U1EjbTJk7PA7GicDQdkiXLEk6MN2/0tAEqafB2Yhsk0PSBRELLteB9pZPqCKPkV5v7wvmDjVd1xukd3nowwIDAQAB",
+    "oauth2": {
+        "client_id": "510327393478-mpn6hvsokt1a3dbpntjtamnqt81qb9g3.apps.googleusercontent.com",
+        "scopes": ["https://www.googleapis.com/auth/calendar", "profile"]
+    },
+    "permissions": [
+        "identity",
+        "storage"
+    ],
+    "content_security_policy": "script-src 'self' https://code.jquery.com/jquery-3.5.1.slim.min.js https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js; object-src 'self'",
+    "content_scripts": [
+      {
+        "matches": ["https://canvas.dartmouth.edu/calendar*","https://dartmouth.instructure.com/calendar"],
+        "js": ["content.js"]
+      }
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+  "icons": { "16": "./16.png", 
+    "48": "./48.png", 
+    "128":"./128.png"
+  }
+}

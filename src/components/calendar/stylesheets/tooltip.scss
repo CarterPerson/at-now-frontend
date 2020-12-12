@@ -1,0 +1,30 @@
+@import '../../stylesheets/variables.scss';
+
+.tooltip-container {
+  padding: 4px;
+  border-radius: $border-radius-regular;
+  border: 1px solid $color-border;
+}
+
+.tooltip-duration {
+  display: flex;
+  align-items: center;
+
+  input {
+    border-radius: $border-radius-regular;
+    border: 1px solid $color-border;
+    width: 30px;
+    margin-right: 4px;
+  }
+}
+
+.tooltip-actions {
+  display: flex;
+  justify-content: space-around;
+
+  button {
+    background: none;
+    border: none;
+    outline: none; 
+  }
+}

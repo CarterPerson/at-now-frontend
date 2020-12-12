@@ -1,0 +1,44 @@
+@import '../../stylesheets/variables.scss';
+
+.assignmentList {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  .ReactCollapse--collapse {
+    transition: height 0.3s;
+  }
+}
+
+.assignmentList-section-header {
+  background: lightgrey;
+  font-size: $font-size-small;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+
+  &.open {
+    img {
+      transform: rotate(90deg);
+    }
+  }
+
+  button {
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  img {
+    transition: transform 0.3s;
+    margin: 0;
+  }
+}
+
+.assignmentList-section-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 5px 0 5px;
+  transition: height 0.3s;
+}

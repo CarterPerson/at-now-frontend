@@ -1,0 +1,10 @@
+.calendar {
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+
+  &.faded {
+    opacity: .25;
+  }
+}
